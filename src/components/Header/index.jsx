@@ -1,7 +1,14 @@
+import Navbar from "./Navbar";
+import * as S from './HeaderStyle';
+import logo from '../../assets/img/logo.PNG';
+
 export default function Header(){
     return(
         <>
-            <h1>Hello World!</h1>
+            <S.Header>
+                <a href="#"><S.Logo src={logo} alt="logo" /></a>
+                <Navbar/>
+            </S.Header>
         </>
     );
 }
