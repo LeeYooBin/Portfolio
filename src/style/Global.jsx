@@ -47,6 +47,7 @@ export const Skill = styled.li`
     width: 43vw;
     height: 21.5vh;
     background-color: aliceblue;
+    margin-bottom: 2vh;
     color: #1C1D21;
     display: flex;
     flex-direction: column;
@@ -65,9 +66,12 @@ export const Skill = styled.li`
     }
 
     @media screen and (min-width: 1000px){
+        margin-bottom: 0;
         width: 15vw;
         height: 25vh;
+    }
 
+    @media screen and (min-width: 1281px){
         :hover{
             transform: scale(1.10);
         }
