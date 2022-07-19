@@ -1,18 +1,24 @@
 import { GlobalStyle } from "../../style/Global";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route
+} from "react-router-dom";
 import Header from "../../components/Header";
-import Main from "../../components/Main";
-import About from "../../components/About";
-import Skills from "../../components/Skills";
-import Hobbies from "../../components/Hobbies";
-import Education from "../../components/Education";
+import Main from "../Main";
+
 
 export default function Home(){
     return(
         <>
-            <GlobalStyle />
-            <Header />
-            <Main />
-            
+            <Router>
+                <GlobalStyle />
+                <Header />
+
+                <Routes>
+                    <Route path="/" element={<Main/>}></Route>
+                </Routes>
+            </Router>
         </>
     );
 }

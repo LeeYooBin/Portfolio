@@ -1,12 +1,12 @@
 import Navbar from "./Navbar";
 import * as S from './HeaderStyle';
-import './style.css';
+import { Link } from "react-router-dom";
 
 export default function Header(){
     return(
         <>
             <S.Header>
-                <S.Logo href="#" ><h1>Roberdan Santos</h1></S.Logo>
+                <Link to='/' style={S.Logo}><h1>Roberdan Santos</h1></Link>
                 <Navbar/>
             </S.Header>
         </>

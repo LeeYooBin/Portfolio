@@ -17,12 +17,8 @@ export const Header = styled.header`
     }
 `;
 
-export const Logo = styled.a`
-    text-decoration: none;
-    color: #000;
-    font-size: 0.6em;
-
-    @media screen and (min-width: 700px){
-        font-size: 0.8em;
-    }
-`;
+export const Logo = {
+    'text-decoration': 'none',
+    color: '#000',
+    'font-size': window.screen.width >= 700 ? '0.7em' : '0.6em'
+};
