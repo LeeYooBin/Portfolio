@@ -28,7 +28,7 @@ export const Article = styled.article`
 
     p{
         margin-top: 1vh;
-        font-weight: 100;
+        font-weight: 500;
     }
 
     @media screen and (min-width: 700px){

@@ -1,12 +1,12 @@
 import Navbar from "./Navbar";
 import * as S from './HeaderStyle';
-import logo from '../../assets/img/logo.PNG';
+import './style.css';
 
 export default function Header(){
     return(
         <>
             <S.Header>
-                <a href="#"><S.Logo src={logo} alt="logo" /></a>
+                <S.Logo href="#" ><h1>Roberdan Santos</h1></S.Logo>
                 <Navbar/>
             </S.Header>
         </>

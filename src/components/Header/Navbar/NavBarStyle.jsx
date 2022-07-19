@@ -50,7 +50,7 @@ export const Menu = styled.nav`
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
-    height: 50vh;
+    height: 40vh;
     width: 50vw;
     padding-top: 4rem;
     transition: transform 0.3s ease-in-out;
@@ -65,24 +65,31 @@ export const Menu = styled.nav`
     @media (min-width: 920px) {
         transform: translateX(100%);
         position: absolute;
-        right: 52%;
-        top: 36%;
+        right: 35%;
+        top: 33%;
         padding: 0;
-        width: 42%;
+        width: 23%;
         background: transparent;
         font-weight: 700;
         height: auto;
         flex-direction: row;
 
         a{
-            width: 8vw;
+            color: #000;
+            width: auto;
             padding: 0.1%;
             text-align: center;
-            color: #000;
+            font-size: 1.1em;
+            font-weight: 700;
+            border-bottom: solid 2px transparent;
+
+            :hover{
+                border-bottom: solid 2px #000;
+            }
         }
     }
 
     @media (min-width: 1200px) {
-        top: 41.5%;
+        top: 40%;
     }
 `;

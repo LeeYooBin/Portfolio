@@ -9,9 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Prompt:wght@100&family=Roboto+Condensed:ital@1&family=Roboto:wght@100&display=swap');
-        font-family: 'Montserrat', sans-serif;
-        background-color: #E5E5E5;
+        font-family: 'Raleway', sans-serif;
+        background-color: #F5F5F5;
     }
 `;
 

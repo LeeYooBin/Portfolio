@@ -12,10 +12,7 @@ export default function Home(){
             <GlobalStyle />
             <Header />
             <Main />
-            <About />
-            <Skills />
-            <Hobbies />
-            <Education />
+            
         </>
     );
 }
