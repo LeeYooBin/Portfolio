@@ -21,7 +21,7 @@ export const SubTitle = styled.h2`
 `;
 
 export const Wrapper = styled.section`
-    padding: 5%;
+    padding: 5vh 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ export const SkillsWrapper = styled.ul`
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 900px){
         padding: 0 5%;
         justify-content: center;
         gap: 1.5em;
