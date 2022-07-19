@@ -1,11 +1,11 @@
-import * as G from '../../style/Global';
+import { SubTitle } from '../../style/Global'
 import * as S from './AboutStyle';
 
 export default function About(){
     return(
         <>
             <S.About id='about'>
-                <G.SubTitle>About</G.SubTitle>
+                <SubTitle>About</SubTitle>
                 <article>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
