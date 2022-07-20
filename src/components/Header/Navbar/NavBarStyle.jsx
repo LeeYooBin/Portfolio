@@ -68,7 +68,7 @@ export const Menu = styled.nav`
         right: 37%;
         top: 33%;
         padding: 0;
-        width: 25%;
+        width: 27%;
         background: transparent;
         font-weight: 700;
         height: auto;

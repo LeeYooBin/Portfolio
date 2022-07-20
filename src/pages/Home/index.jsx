@@ -7,6 +7,8 @@ import {
 import Header from "../../components/Header";
 import Main from "../Main";
 import About from "../About";
+import Portfolio from "../Portfolio";
+
 
 export default function Home(){
     return(
@@ -17,6 +19,7 @@ export default function Home(){
                 <Routes>
                     <Route path="/" element={<Main />}></Route>
                     <Route path="/About" element={<About />}></Route>
+                    <Route path="/Portfolio" element={<Portfolio />}></Route>
                 </Routes>
             </Router>
         </>
