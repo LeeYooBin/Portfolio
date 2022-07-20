@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Header from "../../components/Header";
 import Main from "../Main";
-
+import About from "../About";
 
 export default function Home(){
     return(
@@ -14,9 +14,9 @@ export default function Home(){
             <Router>
                 <GlobalStyle />
                 <Header />
-
                 <Routes>
-                    <Route path="/" element={<Main/>}></Route>
+                    <Route path="/" element={<Main />}></Route>
+                    <Route path="/About" element={<About />}></Route>
                 </Routes>
             </Router>
         </>

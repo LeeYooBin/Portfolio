@@ -14,8 +14,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
+export const Title = styled.h2`
+    font-size: 2.3em;
+    margin-bottom: 2vh;
+`;
+
 export const SubTitle = styled.h2`
-    font-size: 2em;
+    font-size: 1.7em;
     margin-bottom: 2vh;
 `;
 
@@ -45,7 +50,8 @@ export const SkillsWrapper = styled.ul`
 export const Skill = styled.li`
     width: 43vw;
     height: 21.5vh;
-    background-color: aliceblue;
+    background-color: #FFF;
+    border: 3px solid #000;
     margin-bottom: 2vh;
     color: #1C1D21;
     display: flex;

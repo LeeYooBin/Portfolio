@@ -1,7 +1,12 @@
+import React, { useEffect } from 'react';
 import * as S from './MainStyle';
 import profile from '../../assets/img/profile.jpg';
 
 export default function Main(){
+    useEffect(() => {
+        document.title = 'Home';
+    }, []);
+
     return(
         <>
             <S.Main>
@@ -13,9 +18,8 @@ export default function Main(){
                             I'm a computer science student who decided
                             to follow the programming path.
                             <br />
-                            I've got academic experience in Web Development.
-                            I work with projects involving websites building,
-                            APIs and database. I'm currently focusing on frontend technologies.
+                            This is my site, where
+                            I blog and share whatever projects I've been working on.
                         </p>
                     </S.Article>
                     <S.Links>

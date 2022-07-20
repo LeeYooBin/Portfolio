@@ -75,6 +75,10 @@ export const Profile = styled.img`
         width: 40vw;
     }
 
+    @media screen and (min-width: 920px){
+        width: 25vw;
+    }
+
 `;
 
 export const Links = styled.nav`
@@ -133,7 +137,6 @@ export const Link = styled.a`
     @media screen and (min-width: 700px){
         font-size: 1.2em;
     }
-
 
     @media screen and (min-width: 1281px){
         font-size: 1em;

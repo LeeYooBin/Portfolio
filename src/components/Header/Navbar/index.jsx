@@ -19,7 +19,8 @@ export default function Navbar() {
                 </S.StyledBurger>
 
                 <S.Menu open={open}>
-                    <a href='#' onClick={() => close(open)}>About</a>
+                    <Link to='/' onClick={() => close(open)}>Home</Link>
+                    <Link to='/About' onClick={() => close(open)}>About</Link>
                     <a href='#' onClick={() => close(open)}>Portfolio</a>
                     <a href='#' onClick={() => close(open)}>Contact</a>
                 </S.Menu>

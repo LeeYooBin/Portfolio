@@ -35,7 +35,7 @@ export const Space = styled.div`
 
 export const ImgWrapper = styled.div`
     width: 90vw;
-    height: 45vh;
+    height: 40vh;
     background-color: aliceblue;
     display: flex;
     align-items: center;
@@ -61,6 +61,10 @@ export const Img = styled.img`
 
     @media screen and (min-width: 1000px){
         width: 10vw;
+    }
+
+    @media screen and (min-width: 1281px){
+        width: 7vw;
     }
 `;
 

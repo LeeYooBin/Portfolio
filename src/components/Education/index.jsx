@@ -3,8 +3,6 @@ import * as S from './EducationStyle';
 import ufs from '../../assets/img/ufs .png';
 import vnw from '../../assets/img/vnw.png';
 
-import './style.css';
-
 export default function Education(){
     return(
         <>
