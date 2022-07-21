@@ -65,10 +65,10 @@ export const Menu = styled.nav`
     @media (min-width: 920px) {
         transform: translateX(100%);
         position: absolute;
-        right: 37%;
+        right: 30%;
         top: 33%;
         padding: 0;
-        width: 27%;
+        width: 20%;
         background: transparent;
         font-weight: 700;
         height: auto;

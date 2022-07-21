@@ -87,4 +87,26 @@ export const Icon = {
     'font-size': '4em'
 }
 
+export const Portfolio = styled.section`
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1000px){
+        padding: 2.5% 10%;
+    }
+`;
+
+export const PortfolioWrapper = styled.div`
+    @media screen and (min-width: 700px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1000px){
+        gap: 1rem;
+    }
+`;
+
 

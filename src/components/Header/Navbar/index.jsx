@@ -22,7 +22,6 @@ export default function Navbar() {
                     <Link to='/' onClick={() => close(open)}>Home</Link>
                     <Link to='/About' onClick={() => close(open)}>About</Link>
                     <Link to='/Portfolio' onClick={() => close(open)}>Portfolio</Link>
-                    <a href='#' onClick={() => close(open)}>Contact</a>
                 </S.Menu>
             </S.Navbar>
         </>
