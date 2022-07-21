@@ -1,13 +1,11 @@
 import Project from '../Project';
 import { SubTitle, Portfolio, PortfolioWrapper } from '../../style/Global';
-import * as S from './FavoritesStyle';
-import { Link } from 'react-router-dom';
 
-export default function Favorites(){
+export default function Projects(){
     return(
         <>
             <Portfolio>
-                <SubTitle>Favorites Projects</SubTitle>
+                <SubTitle>Front-End</SubTitle>
                 <PortfolioWrapper>
                     <Project
                         title={'Recipes'}
@@ -36,8 +34,20 @@ export default function Favorites(){
                         app={"https://leeyoobin.github.io/Portflow/"}
                         text={`Arts site using React Js, styled-components and github pages for hosting.`}
                     />
+                    <Project
+                        title={'Decoder'}
+                        code={"https://github.com/LeeYooBin/Decodificador"}
+                        app={"https://leeyoobin.github.io/Decodificador/"}
+                        text={`Decoder for the Oracle Next Education program using HTML, CSS and Javascript.`}
+                    />
+                    <Project
+                        title={'VnW Technical challenge'}
+                        code={"https://github.com/LeeYooBin/VnW-desafio-tecnico"}
+                        app={"#"}
+                        text={`Selection process for Vai na Web studio.`}
+                    />
                 </PortfolioWrapper>
-                <Link to='/Projects' style={S.LinkStyle}><S.PortfolioLink>More projects</S.PortfolioLink></Link>
+                <SubTitle style={{'margin-top': '5vh'}}>Back-End</SubTitle>
             </Portfolio>
         </>
     );

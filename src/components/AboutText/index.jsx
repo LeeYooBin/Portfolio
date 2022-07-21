@@ -32,7 +32,7 @@ export default function AboutText(){
                         </S.Item>
                         <S.Item>
                             <S.Icon src={it} alt="" />
-                            I'm studying in computer science.
+                            I'm studying computer science.
                         </S.Item>
                         <S.Item>
                             <S.Icon src={web} alt="" />

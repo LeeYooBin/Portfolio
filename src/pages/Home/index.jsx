@@ -5,10 +5,10 @@ import {
     Route
 } from "react-router-dom";
 import Header from "../../components/Header";
+import Projects from '../../components/Projects';
 import Main from "../Main";
 import About from "../About";
 import Portfolio from "../Portfolio";
-
 
 export default function Home(){
     return(
@@ -20,6 +20,7 @@ export default function Home(){
                     <Route path="/" element={<Main />}></Route>
                     <Route path="/About" element={<About />}></Route>
                     <Route path="/Portfolio" element={<Portfolio />}></Route>
+                    <Route path="/Projects" element={<Projects />}></Route>
                 </Routes>
             </Router>
         </>

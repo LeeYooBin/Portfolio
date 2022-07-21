@@ -14,11 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export const Title = styled.h2`
-    font-size: 2.3em;
-    margin-bottom: 2vh;
-`;
-
 export const SubTitle = styled.h2`
     font-size: 1.7em;
     margin-bottom: 2vh;
