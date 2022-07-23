@@ -29,6 +29,12 @@ export default function Projects(){
                         to save favorites.`}
                     />
                     <Project
+                        title={'Desenvolvimento sustentável'}
+                        code={"https://github.com/LeeYooBin/Desenvolvimento-Sustentavel"}
+                        app={"https://62dc7faf1cba5366e65fb91f--glittering-chaja-fe26b7.netlify.app/"}
+                        text={`My version of the United Nations Goal Cards using React JS and Netlify for hosting.`}
+                    />
+                    <Project
                         title={'Portflow'}
                         code={"https://github.com/LeeYooBin/Portflow"}
                         app={"https://leeyoobin.github.io/Portflow/"}
@@ -47,7 +53,6 @@ export default function Projects(){
                         text={`Selection process for Vai na Web studio.`}
                     />
                 </PortfolioWrapper>
-                <SubTitle style={{'margin-top': '5vh'}}>Back-End</SubTitle>
             </Portfolio>
         </>
     );
