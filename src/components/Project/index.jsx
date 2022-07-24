@@ -12,7 +12,7 @@ export default function Project({title, code, app, text}){
                 <S.Links>
                     <S.Link href={code} target={'_blank'}>code</S.Link>
                     <p>/</p>
-                    <S.Link href={app} target={'_blank'}>demo</S.Link>
+                    <S.Link href={app} target={'_blank'}>App</S.Link>
                 </S.Links>
                 <S.Text>
                     {text}
