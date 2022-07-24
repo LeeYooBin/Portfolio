@@ -10,9 +10,9 @@ export default function Project({title, code, app, text}){
                     <span>{title}</span>
                 </S.Title>
                 <S.Links>
-                    <S.Link href={code}>code</S.Link>
+                    <S.Link href={code} target={'_blank'}>code</S.Link>
                     <p>/</p>
-                    <S.Link href={app}>demo</S.Link>
+                    <S.Link href={app} target={'_blank'}>demo</S.Link>
                 </S.Links>
                 <S.Text>
                     {text}
