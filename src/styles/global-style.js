@@ -9,10 +9,20 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body {
     font-family: 'JetBrains Mono', monospace;
+
+    ::-webkit-scrollbar {
+      width: .8rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #0e0d0d;
+      border-radius: .6rem;
+    }
   }
 `;
 
