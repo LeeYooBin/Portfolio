@@ -12,7 +12,7 @@ export const Content = styled.div`
   }
 
   @media screen and (min-width: 920px) {
-    padding: 3rem 20rem;
+    padding: 3rem 25rem;
   }
 `;
 

@@ -23,17 +23,19 @@ export const Image = styled.img`
 export const Info = styled.div`
   color: ${theme.colors.text};
   background-color: ${theme.colors.project};
+  height: 26rem;
   border-radius: 0 0 2rem 2rem;
   padding: 2.7rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 1rem;
   text-align: justify;
 
-  @media screen and (min-width: 760px) {
-    padding: 2rem;
-  }
+  // @media screen and (min-width: 760px) {
+  //   padding: 2rem;
+  // }
 `;
 
 export const Title = styled.h3`
@@ -42,7 +44,7 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.h3`
-  margin: 1.2rem 0;
+  // margin: 1.2rem 0;
   font-size: ${theme.fonts.projectText};
   font-weight: 500;
 `;
@@ -57,7 +59,7 @@ export const LinkWrapper = styled.div`
   height: auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5rem;
+  // margin-top: 1.5rem;
 `;
 
 export const Link = styled.a`

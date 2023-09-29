@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from 'uuid';
 import Navbar from "../../components/navbar";
 import NavLink from "../../components/navlink";
 import ProfileImage from "../../components/profileImage";
@@ -10,6 +11,8 @@ import ExperienceCard from "../../components/experienceCard";
 import ProjectCard from "../../components/projectCard";
 import Footer from "../../components/Footer";
 import * as S from './style';
+import profile from "../../assets/profile.png";
+import projects from "../../data/projects";
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa';
 
@@ -25,18 +28,18 @@ const Home = () => (
     <main>
       <S.AboutSection id="about">
         <ProfileImage 
-          src="https://i.pinimg.com/736x/4c/01/6e/4c016e70bed7cebff99f1bec3b1f1c16.jpg"
-          alt="Provisory"
+          src={profile}
+          alt="Profile Image"
         />
         <div>
           <Heading>Hi, I'm Rob</Heading>
           <Text>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi animi incidunt facilis dolores 
-            tempora earum sed, beatae labore sequi voluptates, neque sunt laboriosam voluptatum? Suscipit 
-            fugiat enim aspernatur provident dolores?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi animi incidunt facilis dolores 
-            tempora earum sed, beatae labore sequi voluptates, neque sunt laboriosam voluptatum? Suscipit 
-            fugiat enim aspernatur provident dolores?
+            My name is Roberdan and I am a 22 year old software developer with a passion for computing. 
+            I am currently studying a bachelor's degree in computer science at the Federal University of Sergipe.
+            Additionally, I have about a year of experience as a web/mobile developer using technologies such as React, 
+            Typescript and Node.
+            In my free time, I enjoy playing Games, workout and working on projects related to graphs and algorithms. 
+            I am excited to share my skills and experience in the fields below.
           </Text>
         </div>
       </S.AboutSection>
@@ -63,54 +66,24 @@ const Home = () => (
       <Section id="projects">
         <Title>My Projects</Title>
         <S.ProjectsWrapper>
-          <ProjectCard
-            src="https://t.ctcdn.com.br/JlHwiRHyv0mTD7GfRkIlgO6eQX8=/640x360/smart/i257652.jpeg"
-            title="Project 1"
-            description="This is sample project description random things are here in description 
-            This is sample project lorem ipsum generator for dummy content"
-            stacks="HTML, CSS, JS"
-          />
-          <ProjectCard
-            src="https://t.ctcdn.com.br/JlHwiRHyv0mTD7GfRkIlgO6eQX8=/640x360/smart/i257652.jpeg"
-            title="Project 1"
-            description="This is sample project description random things are here in description 
-            This is sample project lorem ipsum generator for dummy content"
-            stacks="HTML, CSS, JS"
-          />
-          <ProjectCard
-            src="https://t.ctcdn.com.br/JlHwiRHyv0mTD7GfRkIlgO6eQX8=/640x360/smart/i257652.jpeg"
-            title="Project 1"
-            description="This is sample project description random things are here in description 
-            This is sample project lorem ipsum generator for dummy content"
-            stacks="HTML, CSS, JS"
-          />
-          <ProjectCard
-            src="https://t.ctcdn.com.br/JlHwiRHyv0mTD7GfRkIlgO6eQX8=/640x360/smart/i257652.jpeg"
-            title="Project 1"
-            description="This is sample project description random things are here in description 
-            This is sample project lorem ipsum generator for dummy content"
-            stacks="HTML, CSS, JS"
-          />
-          <ProjectCard
-            src="https://t.ctcdn.com.br/JlHwiRHyv0mTD7GfRkIlgO6eQX8=/640x360/smart/i257652.jpeg"
-            title="Project 1"
-            description="This is sample project description random things are here in description 
-            This is sample project lorem ipsum generator for dummy content"
-            stacks="HTML, CSS, JS"
-          />
-          <ProjectCard
-            src="https://t.ctcdn.com.br/JlHwiRHyv0mTD7GfRkIlgO6eQX8=/640x360/smart/i257652.jpeg"
-            title="Project 1"
-            description="This is sample project description random things are here in description 
-            This is sample project lorem ipsum generator for dummy content"
-            stacks="HTML, CSS, JS"
-          />
+          {projects.map(project => (
+            <ProjectCard
+              key={uuidv4()}
+              title={project.title}
+              src={project.src}
+              alt={project.alt}
+              description={project.description}
+              stacks={project.stacks}
+              codeLink={project.code}
+              previewLink={project.preview}
+            />
+          ))}
         </S.ProjectsWrapper>
       </Section>
     </main>
     <Footer>
-      <S.Link href="#" target="_blank"><AiFillGithub /></S.Link>
-      <S.Link href="#" target="_blank"><FaLinkedin /></S.Link>
+      <S.Link href="https://github.com/LeeYooBin" target="_blank"><AiFillGithub /></S.Link>
+      <S.Link href="https://www.linkedin.com/in/roberdan-santos/" target="_blank"><FaLinkedin /></S.Link>
     </Footer>
   </S.Content>
 );
